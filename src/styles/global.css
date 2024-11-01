@@ -1,12 +1,12 @@
 /* Global styles */
 :root {
-    --background: #2e2e32; /* Dark background for Yaru Dark */
-    --background-light: #3d3d40; /* Slightly lighter dark for contrast */
-    --button: #c792ea; /* Purple accent for buttons */
-    --text: #e1bee7; /* Light pink for text */
-    --text-light: #2e2e32; /* Inverted color for light theme */
-    --text-link: #c792ea; /* Purple for links */
-    --underline: #c2185b; /* Pink accent for underline */
+    --background: #1e1e2e; /* Dark mode background */
+    --background-light: #f8f8f2; /* Light mode background */
+    --button: #c678dd; /* Purple for accent */
+    --text: #ffffff; /* White text in dark mode */
+    --text-light: #000000; /* Black text in light mode */
+    --text-link: #d16d9e; /* Pink for link accents */
+    --underline: #d16d9e; /* Pink underline */
     --header: 'Pacifico', cursive;
     --body: 'Josefin Sans', sans-serif;
 }
@@ -15,6 +15,7 @@ html {
     background-color: var(--background);
     color: var(--text);
 }
+
 
 body {
     max-width: 540px;
