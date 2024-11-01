@@ -1,14 +1,14 @@
 /* Global styles */
 :root {
-    --background: #1e1e2e; 
-    --background-light: #fdebf3;
-    --button: #78c2ad;
-    --text: #fdebf3;
-    --text-light: #1e1e2e; 
-    --text-link: #78c2ad;
-    --underline: #375a7f;
+    --background: #2e2e32; /* Dark background for Yaru Dark */
+    --background-light: #3d3d40; /* Slightly lighter dark for contrast */
+    --button: #c792ea; /* Purple accent for buttons */
+    --text: #e1bee7; /* Light pink for text */
+    --text-light: #2e2e32; /* Inverted color for light theme */
+    --text-link: #c792ea; /* Purple for links */
+    --underline: #c2185b; /* Pink accent for underline */
     --header: 'Pacifico', cursive;
-    --body: 'Josefin Sans', sans-serif; 
+    --body: 'Josefin Sans', sans-serif;
 }
 
 html {
@@ -50,7 +50,7 @@ p {
 }
 
 small, li {
-    font-family: var(--body); 
+    font-family: var(--body);
 }
 
 /* Navigation Bar */
@@ -94,7 +94,7 @@ small, li {
 
 /* Badge */
 .badge {
-    background-color: #584966;
+    background-color: #4a3f56; /* Dark purple background */
     color: var(--text);
     border-radius: 6px;
     font-family: var(--body);
@@ -169,13 +169,6 @@ small, li {
     transform: scale(1.05);
 }
 
-.link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-}
-
 /* Button */
 .btn {
     text-align: center;
@@ -240,32 +233,14 @@ footer {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 2px solid #fdebf3;
+    border: 2px solid var(--text);
 }
 
 .icon__link:hover {
     border-color: var(--text-link);
 }
 
-
-.git-icon {
-    content: url("/github-mark-white.svg");
-}
-
-.mail-icon {
-    content: url("/mail-white.svg");
-}
-
-.linked-in {
-    content: url("/li-in-white.png");
-}
-
 /* 404 */
-.lost {
-    margin-top: 30%;
-    text-align: center;
-}
-
 .lost__header {
     margin: 0 auto;
     text-align: center;
@@ -275,69 +250,10 @@ footer {
 }
 
 .lost__body {
-    color: #5C5B77;
+    color: #7b697d; /* Light purple for contrast */
 }
 
-.lost__link {
-    color: var(--text-link);
-    text-decoration: none;
-}
-
-/* Theme Icon */
-html.light {
-    background-color: var(--background-light);
-    color: var(--text-light);
-}
-
-.light .navbar__title > a {
-    color: var(--text-light);
-}
-
-.light .navbar__menu > a {
-    color: var(--text-light);
-}
-
-.light .card__title {
-    color: var(--text-light); 
-}
-
-.light .card__txt {
-    color: var(--text-light); 
-}
-
-.light .btn {
-    color: var(--text-light);
-}
-
-.light .btn:hover {
-    color: var(--text);
-}
-
-.light .icon__link {
-    border: 2px solid var(--text-light);
-}
-
-.light .icon__link:hover {
-    border-color: var(--text-link);
-}
-
-.light .git-icon {
-    content: url("/github-mark.svg");
-}
-
-.light .mail-icon {
-    content: url("/mail.svg");
-}
-
-.light .linked-in {
-    content: url("/li-in.png");
-}
-
-.light .badge__link {
-    color: var(--text-link);
-}
-
-/* Media Query */
+/* Media Query Adjustments */
 @media only screen and (max-width: 600px) {
     body {
         width: 350px;
@@ -375,4 +291,3 @@ html.light {
         width: 350px;
     }
 }
-
